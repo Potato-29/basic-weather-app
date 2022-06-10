@@ -1,38 +1,95 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  color: white;
+  font-family: 'Josefin Sans';
+}
+
+
+.wave-container{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -5px;
+  height: 90vh;
+  display: flex;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+
+.search{
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 0rem 0 1rem 0;
+  border: 0;
+  border-radius: 0 0 20px 20px;
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.3);
+box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.3);
+}
+
+
+.weather{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location{
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  
+}
+h1{
+  font-size: 4em;
+}
+
+h1, h2 {
+  font-weight: 900;
+}
+
+.current-temp{
+  background: rgba( 255, 255, 114, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 8.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 2rem;
+}
+
+.temp{
+  font-size: 4em;
+  
+}
+.temp-max-min{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-type{
+  /* padding: 1rem; */
+  font-size: 2em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon{
+  height: 70px;
+  width: 70px;
+  
+  
 }
