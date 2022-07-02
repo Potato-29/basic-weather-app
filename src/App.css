@@ -12,6 +12,11 @@ body{
   font-family: 'Josefin Sans';
 }
 
+.App{
+  background-color: #66c2e3;
+  height: 100vh;
+}
+
 
 .wave-container{
   position: fixed;
@@ -22,6 +27,7 @@ body{
   display: flex;
   z-index: -1;
   transform: rotate(180deg);
+  /* background-color: #66c2e3; */
 }
 
 
@@ -47,31 +53,45 @@ box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.3);
 }
 
 .location{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   padding: 2rem;
   
 }
 h1{
-  font-size: 4em;
+  font-size: 2em;
 }
 
 h1, h2 {
   font-weight: 900;
 }
 
+.default-weathers{
+  visibility: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
 .current-temp{
   background: rgba( 255, 255, 114, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 8.5px );
--webkit-backdrop-filter: blur( 8.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-padding: 2rem;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 8.5px );
+  -webkit-backdrop-filter: blur( 8.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 2rem;
+  /* width: 60%; */
 }
 
 .temp{
-  font-size: 4em;
+  font-size: 3em;
   
 }
 .temp-max-min{
